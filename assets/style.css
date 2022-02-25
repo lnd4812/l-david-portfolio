@@ -1,0 +1,39 @@
+:root {
+    --primary-color:  #fff;
+    --secondary-color: #b6eef0;
+    --tertiary-color: #273738;
+}
+
+/* use * for universal selector to apply the following to all elements*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    color: var(--primary-color);
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+header {
+    background-color: var(--tertiary-color);
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+header nav {
+    color: var(secondary-color);
+    display: inline;
+}
+
+.name {
+    color: var(tertiary-color);
+    background-color: var(secondary-color);
+}
+
+footer {
+    display: inline;
+}

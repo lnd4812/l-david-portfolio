@@ -19,14 +19,45 @@ body {
 
 header {
     background-color: var(--tertiary-color);
+    padding: 20px 35px;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
 }
 
-header nav {
-    color: var(secondary-color);
+header h1 {
+    color: var (secondary-color);
+    font-size: 36px;
+    font-weight: bold;
+    margin: 0;
     display: inline;
+}
+
+header a {
+    color: var(--secondary-color);
+    text-decoration: none;
+}
+
+header nav {
+   float: right;
+   margin: 7px 0; 
+}
+
+header nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+header nav ul li {
+    display: inline;
+    list-style: none;
+}
+
+header nav ul li a {
+    margin: 0 30px;
+    font-weight: lighter;
+    font-size: 20px;
 }
 
 .name {

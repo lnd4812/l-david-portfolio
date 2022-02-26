@@ -62,15 +62,9 @@ header nav ul li a {
     font-size: 20px;
 }
 
-.bio {
-    color: var(tertiary-color);
-    background-color: var(secondary-color);
-    font-size: 25px;
-}
-
 .hero {
     width: 100%;
-    background-image: url("../images/CBIshoreline--credits Mike Grandmaison.Getty.jpg");
+    background-image: url("../images/CBIshoreline--credits Mike Grandmaison.Getty.jpg");/*replace with something less vivid in colour*/
     height: 300px;
     background-size: cover;
     background-position: center;
@@ -86,15 +80,83 @@ header nav ul li a {
     right: 10px;
 }
 
-
 .hero-caption h2 {
     color: var(--tertiary-color);
     font-size: 28px;
     text-align: center;
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 main {
     color: var(--tertiary-color);
+}
+
+.bio {
+    color: var(--tertiary-color);
+    background-color: var(--secondary-color);
+    font-size: 25px;
+}
+
+.reference {
+    width: 35%;
+    float: left;
+    font-size: 25px;
+    text-align: center;}
+
+.reference img {
+    border-radius: 50%;
+    width: 100px;
+    text-align: center;
+}
+
+.bio {
+    font-size: 15px;
+    margin-bottom: 35px;
+    width: 65%;
+    float: right;
+    border-left: 5px solid var(--tertiary-color);
+}
+
+.major {
+    width: 65%;
+    margin-right: 0;
+    padding: 5px;
+    border: 5px solid var(--secondary-color);
+}
+
+.minor-2, .minor-4 {
+    width: 37.5%;
+    margin-right: 0;
+    padding: 5px;
+    border: 5px solid var(--secondary-color);
+}
+
+.minor-1, .minor-3 {
+    width: 37.5%;
+    margin-right: 200px;
+    padding: 5px;
+    border: 5px solid var(--secondary-color);
 }
 
 footer {
@@ -116,4 +178,16 @@ footer a {
 
 .contact-details {
     line-height: 1.5;
+  }
+
+  @media screen and (max-width: 980px) {
+
+  }
+
+  @media screen and (max-width: 768px) {
+
+  }
+
+  @media screen and (max-width: 575px) {
+
   }

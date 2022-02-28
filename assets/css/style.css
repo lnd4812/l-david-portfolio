@@ -1,6 +1,6 @@
 :root {
     --primary-color: #fff;
-    --secondary-color: #b6eef0;
+    --secondary-color: #d2ebf3;
     --tertiary-color: #112f31;
 }
 
@@ -58,13 +58,25 @@ header nav ul li a {
     text-decoration: underline;
 }
 
-/* set up coding for the footer - to be edited later */
-
-footer {
+/* outline main section containing bio and work */
+main {
     width: 100%;
-    background-color: var(--primary-color);
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
+}    
+
+hr {
+    margin: 25px;
+    }
+
+/* style the footer */
+footer {
+    width: 100%;
+    height: 150px;
+    background-color: var(--primary-color);
+    display: flex;
+    justify-content: space-around;
     flex-wrap: wrap;
 }
 
@@ -75,19 +87,23 @@ footer a {
 
 .contact-caption {
     width: 400px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
     padding-top: 20px;
     margin-left: 20px;
 }
 
 .contact-caption h2 {
     color: var(--tertiary-color);
-    font-size: 30px;
+    float: right;
+    font-size: 40px;
     margin: 0;
 }
 
 .contact-details {
     width: 950px;
-    margin-left: 450px;
+    float: right;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -127,32 +143,35 @@ footer a {
 }
 
 .bio {
-    width: 1300px;
+    width: 100%;
     height: 200px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
 }
 
 .bio-caption {
     height: 200px;
-    width: 35%;
+    width: 450px;
     margin-top: 20px;
-    margin-left: 20px;
 }
 
 .bio-details {
     height: 200px;
-    width: 65%;
+    width: 900px;
     margin-top: 20px;
-    margin-left: 400px;
-}
+    padding-left: 40px;
+   }
 
-.bio-caption, .showcase-container-left h2 {
+.bio-caption h2 {
     color: var(--tertiary-color);
-    font-size: 50px;
+    font-size: 40px;
+    float: right;
 }
 
 .bio p {
     color: var(--tertiary-color);
-    font-size: 15px;
+    font-size: 12px;
 }
 
 .bio-container-left img {
@@ -160,34 +179,35 @@ footer a {
     width: 100px;
 }
 
-
-
-.bio, .showcase {
-    width: 900px;
-    margin: 0 auto 30px auto;
-    background: var(--primary-color);
-    overflow: auto;
+.showcase {
+    width: 100%;
+    height: 1000px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
 }
 
-.bio-container-left, .showcase-container.left {
-    width: 35%;
-    float: left;
+.showcase-caption h2 {
+    color: var(--tertiary-color);
+    font-size: 40px;
+    float: right;
 }
 
-.bio-details {
-    padding: 35px;
-    float: left;
-    width: 65%;
-}
-
-.container-right-major {
+.showcase-main {
     height: 200px;
-    width: 400px;
+    width: 900px;
+    margin-top: 20px;
+    padding-left: 40px;
 }
 
-.container-right-minor {
-    height: 100px;
-    width: 200px;
+.showcase-2 {
+    height: 200px;
+    width: 900px;
+    margin-top: 20px;
+    padding-left: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
 }
 
 .subject {

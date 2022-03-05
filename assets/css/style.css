@@ -75,7 +75,6 @@ header nav ul li a {
 /* style the footer */
 footer {
     width: 100%;
-    height: 150px;
     background-color: var(--primary-color);
     display: flex;
     justify-content: space-around;
@@ -89,7 +88,7 @@ footer a {
 }
 
 .contact-caption {
-    width: 450px;
+    flex: .75;
     padding-top: 20px;
     margin-left: 9px;
     text-align: right;
@@ -113,10 +112,12 @@ footer a {
 }
 
 .contact-details {
-    width: 900px;
+    flex: 2.5;
     padding-top: 20px;
-    padding-left: 40px;
     font-size: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
     border: 5px solid brown;
 }
 
@@ -156,21 +157,19 @@ footer a {
 /* style the "about-me" section */
 .bio {
     width: 100%;
-    height: 200px;
+    height: 250px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
 }
 
 .bio-caption {
-    height: 100%;
-    width: 450px;
+    flex: .75;
     margin-top: 20px;
 }
 
 .bio-details {
-    height:100%;
-    width: 900px;
+    flex: 2.5;
     margin-top: 20px;
     padding-top: 10px;
     padding-left: 20px;
@@ -191,7 +190,7 @@ footer a {
 /* style section featuring my work */
 .showcase {
     width: 100%;
-    height: 500px;
+    height: 550px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -199,8 +198,7 @@ footer a {
 }
 
 .showcase-caption {
-    width: 450px;
-    height: 100%;
+    flex: .75;
     padding-top: 20px;
     padding-right: 20px;
     margin-left: 20px;
@@ -213,8 +211,15 @@ footer a {
     float: right;
 }
 
+.the-works {
+    flex: 2.5;
+    margin-top: 20px;
+    padding-top: 10px;
+    padding-left: 20px;
+}
+
 .showcase-main {
-    height: 50%;
+    height: 45%;
     width: 900px;
     margin-top: 20px;
     padding-left: 10px;
@@ -222,12 +227,12 @@ footer a {
 }
 
 .showcase-main img {
-    height: 50%;
-    max-width: 100%;
+    width: 100%;
+    height: 100%;
 }
 
 .showcase-2 {
-    height: 50%;
+    height: 45%;
     width: 900px;
     margin-top: 20px;
     padding-left: 40px;

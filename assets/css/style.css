@@ -89,10 +89,9 @@ footer a {
 }
 
 .contact-caption {
-    flex: .75;
+    flex: .75 0;
     padding-top: 20px;
-    margin-left: 9px;
-    text-align: right;
+    margin-right: 10px;
 }
 
 /* style footer section reference which styles bio section div as well */
@@ -113,8 +112,9 @@ footer a {
 }
 
 .contact-details {
-    flex: 2.5;
-    padding-top: 20px;
+    flex: 2.25;
+    padding-top: 10px;
+    margin: 5px 40px 0 30px;
     font-size: 15px;
     display: flex;
     align-items: center;
@@ -165,16 +165,16 @@ footer a {
 }
 
 .bio-caption {
-    flex: .75;
+    flex: .8;
     margin-top: 20px;
+    margin-right: 10px;
 }
 
 .bio-details {
     flex: 2.25;
     width: 90%;
-    margin-top: 20px;
-    padding: 10px 30px 10px 30px;
-    border: 5px solid green;
+    margin: 10px 40px 0 30px;
+    padding: 10px;
 }
 
 .bio-caption h2 {
@@ -195,7 +195,6 @@ footer a {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    border: 5px solid purple;
 }
 
 .showcase-caption {
@@ -228,8 +227,8 @@ footer a {
 }
 
 .showcase-main img {
-    width: 100%;
-    height: 100%;
+    max-width: 400px;
+    max-height: 225px;
 }
 
 .showcase-2 {
@@ -242,6 +241,7 @@ footer a {
     border: 5px solid var(--secondary-color);
 }
 
+/* style the 4 "lesser" projects in the portfolio showcase */
 .minor-1, .minor-2, .minor-3, .minor-4 {
     border: 5px solid var(--secondary-color);
     height: 45%;
@@ -252,17 +252,21 @@ footer a {
     margin-right: 2%;
 }
 
+/* fit images to child-flexboxes */
+.minor-1 img, .minor-2 img, .minor-3 img, .minor-4 img {
+   max-width: 100px;
+   max-height: 25px; 
+}
+
 .minor-2, .minor-4 {
     flex: 44%;
 }
 
+/* add clickable titles to each showcase item */
 .subject {
     width: 50px;
     height: 20px;
     background-color: var(--secondary-color);
-    position: absolute;
-    left: 0;
-    bottom: 0;
 }
 
 .subject a {
@@ -270,12 +274,43 @@ footer a {
     font-size: 20px;
 }
 
-  @media screen and (max-width: 980px) {
+/* Media queries for smaller desktop screens and smaller */
+@media screen and (max-width: 980px) {
+    header {
+        padding-bottom: 0;
+        justify-content: center;
+        position: relative;
+    }
 
-  }
+    header h1 {
+        width: 100%;
+        text-align: center;
+    }
+
+    header nav ul {
+        margin-top: 20px;
+        width: 100%;
+        justify-content: center;
+    }
+
+    header nav ul li a {
+        font-size: 20px;
+    }
+
+    footer h2, .contact-caption, .contact-details {
+        text-align: center;
+        width: 100%;
+    }
+
+    .hero-caption {
+        text-align: center;
+    }
+} 
 
   @media screen and (max-width: 768px) {
-
+    section {
+        padding: 30px 15px;
+    }
   }
 
   @media screen and (max-width: 575px) {

@@ -1,10 +1,10 @@
 :root {
     --primary-color: #fff;
-    --secondary-color: #d2ebf3;
-    --tertiary-color: #112f31;
+    --secondary-color: #91c5d4;
+    --tertiary-color: #162f31;
 }
 
-/* use * for universal selector to apply the following to all elements*/
+/* use "*" for universal selector to apply the following to all elements*/
 
 * {
     margin: 0;
@@ -17,20 +17,21 @@ body {
     background: var(--primary-color);
 }
 
+/* style header */
 header {
     background-color: var(--tertiary-color);
-    padding: 20px 35px;
+    padding-top: 15px;
+    padding-right: 35px;
+    padding-bottom: 15px;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
 }
 
-header h1 {
-    color: var(--secondary-color);
+header h1 a {
+    color: var(--tertiary-color);
     font-size: 36px;
     font-weight: bold;
-    margin: 0;
-    display: inline;
 }
 
 header a {
@@ -54,20 +55,20 @@ header nav ul {
 header nav ul li a {
     margin: 0 30px;
     font-weight: lighter;
-    font-size: 1.55vw;
-    text-decoration: underline;
+    font-size: 1vw;
 }
 
-/* outline main section containing bio and work */
-main {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-}    
-
-hr {
-    margin: 25px;
+.amnav, .wknav, .cmnav, .rmnav {
+    padding-bottom: 3px;
+    border-bottom: 3px solid var(--secondary-color);
+}
+.name-container {
+    height: 100%;
+    width: 300px;
+    text-align: right;
+    padding-top: 10px;
+    padding-right: 5px;
+    background-color: var(--secondary-color);
     }
 
 /* style the footer */
@@ -78,6 +79,7 @@ footer {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
+    border: 5px solid black;
 }
 
 footer a {
@@ -87,11 +89,9 @@ footer a {
 
 .contact-caption {
     width: 400px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-end;
     padding-top: 20px;
     margin-left: 20px;
+    border: 5px solid gray;
 }
 
 .contact-caption h2 {
@@ -104,12 +104,10 @@ footer a {
 .contact-details {
     width: 950px;
     float: right;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
     font-size: 15px;
+    border: 5px solid brown;
 }
+
 .cdtel, .cdmail, .cdgithub, .cdlinkedin {
     padding-bottom: 3px;
     border-bottom: 3px solid var(--tertiary-color);
@@ -148,24 +146,28 @@ footer a {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
+    border: 5px solid black;
 }
 
 .bio-caption {
-    height: 200px;
+    height: 150px;
     width: 450px;
     margin-top: 20px;
+    border: 5px solid red;
+    /* coding to right justify and wrap caption needed */
 }
 
 .bio-details {
-    height: 200px;
+    height: 150px;
     width: 900px;
     margin-top: 20px;
     padding-left: 40px;
+    border: 5px solid green;
    }
 
 .bio-caption h2 {
     color: var(--tertiary-color);
-    font-size: 40px;
+    font-size: 50px;
     float: right;
 }
 
@@ -185,6 +187,7 @@ footer a {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
+    border: 5px solid purple;
 }
 
 .showcase-caption h2 {
@@ -198,6 +201,7 @@ footer a {
     width: 900px;
     margin-top: 20px;
     padding-left: 40px;
+    border: 5px solid orange;
 }
 
 .showcase-2 {
@@ -208,6 +212,7 @@ footer a {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
+    border: 5px solid green;
 }
 
 .subject {

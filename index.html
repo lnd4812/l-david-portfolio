@@ -9,25 +9,27 @@
 </head>
     <body>
         <header>
-            <div class="name">   
+            <div class="name">
+                <div class="name-container">   
                 <h1>
                     <a href="index.html">Laurel David</a>
                 </h1>
+                </div>
             </div>    
             <nav>
                 <ul>
                     <!--navigation-links-->
                     <li>
-                        <a href="#about-me">About Me</a>
+                        <a class="amnav" href="#about-me">About Me</a>
                     </li>
                     <li>
-                        <a href="#work">Work</a>
+                        <a class="wknav" href="#work">Work</a>
                     </li>
                     <li>
-                        <a href="#contact-me">Contact Me</a>
+                        <a class="cmnav" href="#contact-me">Contact Me</a>
                     </li>
                     <li>
-                        <a href="resume">My Resume</a><!--add copy of resume to assets-->
+                        <a class="rmnav" href="resume">Resume</a><!--add copy of resume to assets-->
                     </li>
                 </ul>
             </nav>
@@ -42,8 +44,11 @@
             <section id="about-me">
                 <div class="bio">
                     <div class="bio-caption">
-                        <h2>About Me</h2>
-                    </div>
+                        <div class="caption-section">
+                            <2>About Me</h2>
+                        </div>
+                        <img src="/", alt="picture of me">
+                        </div>
                     <div class="bio-details">
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In in tortor in turpis vehicula ornare nec eu urna. Curabitur commodo enim in orci venenatis, at dictum nulla bibendum. Quisque dignissim lorem nec nunc dapibus, in faucibus leo rhoncus. Morbi viverra leo et finibus aliquet. Fusce tincidunt malesuada enim id suscipit. Aenean ac sollicitudin diam. Nulla vehicula ipsum id tellus ultrices consectetur. Ut eget ex quis mi scelerisque pretium quis sit amet massa. Cras bibendum justo eu gravida efficitur. Phasellus fringilla, mi eget cursus tincidunt, nunc tellus iaculis enim, at blandit velit eros sit amet erat. In dapibus at mi quis ultrices. Praesent porttitor magna eget turpis dignissim, id pulvinar urna dictum. Maecenas in vehicula quam.</p>
                     </div>
@@ -51,48 +56,54 @@
             </section>   
             <section id="work">
                 <div class="showcase">
-                    <div class="showcase-caption"> 
-                        <h2>My Work</h2>
+                    <div class="showcase-caption">
+                        <div class="caption-section"> 
+                           <h2>My Work</h2>
+                        </div>
+                    </div>    
+                    <div class="the-works">
+                        <div class="showcase-main">
+                            <img src="/", alt="placeholder for main feature image" /></img> 
+                            <div class="subject">
+                                <a class="feature-name" href="/">Horiseon</a>
+                            </div>             
+                        </div> 
+                        <div class="showcase-2">  
+                            <div class="minor-1"> 
+                                <img src="/", alt="placeholder for secondary work"/>
+                                <div class="subject">
+                                    <a class="feature-name" href="/">work of art 1</a>
+                                </div>
+                            </div>
+                            <div class="minor-2">
+                                <img src="/", alt="placeholder 2 for secondary work"/>
+                                <div class="subject">
+                                    <a class="feature-name" href="/">work of art 2</a>
+                                </div>
+                            </div>
+                            <div class="minor-3">
+                                <img src="/", alt="placeholder 3 for secondary work"/>
+                                <div class="subject">
+                                    <a class="feature-name" href="/">work of art 3</a>
+                                </div>
+                            </div>
+                            <div class="minor-4">
+                                <img src="/", alt="placeholder 4 for secondary work"/>
+                                <div class="subject">
+                                    <a class="feature-name" href="/">work of art 4</a>   
+                                </div>         
+                            </div>
+                        </div>   
                     </div>
-                    <div class="showcase-main">
-                        <img src="/", alt="placeholder for main feature image" /></img> 
-                        <div class="subject">
-                            <a class="feature-name" href="/">Horiseon</a>
-                        </div>             
-                    </div> 
-                    <div class="showcase-2">  
-                        <div class="minor-1"> 
-                            <img src="/", alt="placeholder for secondary work"/>
-                            <div class="subject">
-                                <a class="feature-name" href="/">work of art 1</a>
-                            </div>
-                        </div>
-                        <div class="minor-2">
-                            <img src="/", alt="placeholder 2 for secondary work"/>
-                            <div class="subject">
-                                <a class="feature-name" href="/">work of art 2</a>
-                            </div>
-                        </div>
-                        <div class="minor-3">
-                            <img src="/", alt="placeholder 3 for secondary work"/>
-                            <div class="subject">
-                                <a class="feature-name" href="/">work of art 3</a>
-                            </div>
-                        </div>
-                        <div class="minor-4">
-                            <img src="/", alt="placeholder 4 for secondary work"/>
-                            <div class="subject">
-                                <a class="feature-name" href="/">work of art 4</a>   
-                            </div>         
-                        </div>
-                    </div>   
                 </div>
             </section>
         </main>
         <hr>
         <footer id="contact-me">
             <div class="contact-caption">
-                <h2>Contact Me</h2>
+                <div class="caption-section">
+                    <h2>Contact Me</h2>
+                </div>    
             </div>
             <div class="contact-details">
                 <div class="cdtel"><a href="tel:+6478381211"><h3>(647) 838-1211</h3></a></div>
@@ -100,7 +111,6 @@
                 <div class="cdgithub"><a href="github.com/lnd4812"><h3>GitHub</h3></a></div>
                 <div class="cdlinkedin"><a href="https://www.linkedin.com/in/laurel-david-99122574/"><h3>LinkedIn</h3></a></div>
             </div>
-                
         </footer>
     </body>
 </html>

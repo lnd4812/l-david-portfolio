@@ -159,21 +159,22 @@ footer a {
     height: 200px;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: space-around;
 }
 
 .bio-caption {
-    height: 150px;
+    height: 100%;
     width: 450px;
     margin-top: 20px;
 }
 
 .bio-details {
-    height: 150px;
+    height:100%;
     width: 900px;
-    margin-top: 10px;
+    margin-top: 20px;
     padding-top: 10px;
-    padding-left: 40px;
+    padding-left: 20px;
+    border: 5px solid green;
 }
 
 .bio-caption h2 {
@@ -193,12 +194,13 @@ footer a {
     height: 500px;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: space-around;
     border: 5px solid purple;
 }
 
 .showcase-caption {
     width: 450px;
+    height: 100%;
     padding-top: 20px;
     padding-right: 20px;
     margin-left: 20px;
@@ -212,20 +214,20 @@ footer a {
 }
 
 .showcase-main {
-    height: 200px;
+    height: 50%;
     width: 900px;
     margin-top: 20px;
-    padding-left: 40px;
+    padding-left: 10px;
     border: 5px solid var(--secondary-color);
 }
 
 .showcase-main img {
-    max-height: 200px;
+    height: 50%;
     max-width: 100%;
 }
 
 .showcase-2 {
-    height: 200px;
+    height: 50%;
     width: 900px;
     margin-top: 20px;
     padding-left: 40px;

@@ -2,7 +2,7 @@
     --primary-color: #fff;
     --secondary-color: #91c5d4;
     --tertiary-color: #03282b;
-    --main-background: #f2f5ef;
+    --main-background: #d3dbca;
 }
 
 /* use "*" for universal selector to apply the following to all elements*/
@@ -80,7 +80,6 @@ footer {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-    border: 5px solid black;
 }
 
 footer a {
@@ -94,7 +93,7 @@ footer a {
     margin-right: 10px;
 }
 
-/* style footer section reference which styles bio section div as well */
+/* style footer section reference which styles bio caption & My work div as well */
 .caption-section {
     width: 45%;
     height: 100%;
@@ -119,7 +118,6 @@ footer a {
     display: flex;
     align-items: center;
     justify-content: space-around;
-    border: 5px solid brown;
 }
 
 .cdtel, .cdmail, .cdgithub, .cdlinkedin {
@@ -165,22 +163,28 @@ footer a {
 }
 
 .bio-caption {
-    flex: .8;
+    flex: .75 0 0;
     margin-top: 20px;
     margin-right: 10px;
 }
 
-.bio-details {
-    flex: 2.25;
-    width: 90%;
-    margin: 10px 40px 0 30px;
-    padding: 10px;
+.bio-caption img {
+    border-radius: 50%;
+    width: 25%;
 }
+
 
 .bio-caption h2 {
     color: var(--tertiary-color);
     font-size: 50px;
     float: right;
+}
+
+.bio-details {
+    flex: 2 0 0;
+    width: 90%;
+    margin: 10px 40px 0 30px;
+    padding: 10px;
 }
 
 .bio p {
@@ -198,7 +202,7 @@ footer a {
 }
 
 .showcase-caption {
-    flex: .75;
+    flex: .8;
     padding-top: 20px;
     padding-right: 20px;
     margin-left: 20px;
@@ -219,26 +223,28 @@ footer a {
 }
 
 .showcase-main {
-    height: 45%;
-    width: 95%;
-    padding-top: 10px;
-    padding-left: 10px;
+    width: 90%;
+    height: 200px;
+    margin-left: 25px;
+    flex: 1 0 0;
+    display: flex;
     border: 5px solid var(--secondary-color);
 }
 
 .showcase-main img {
-    max-width: 400px;
-    max-height: 225px;
+    max-width: 100%;
+    height: 200px;
+    align-items: center;
 }
 
 .showcase-2 {
     height: 45%;
     width: 95%;
     margin-top: 20px;
+    margin-right: 25px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    border: 5px solid var(--secondary-color);
 }
 
 /* style the 4 "lesser" projects in the portfolio showcase */
@@ -254,24 +260,31 @@ footer a {
 
 /* fit images to child-flexboxes */
 .minor-1 img, .minor-2 img, .minor-3 img, .minor-4 img {
-   max-width: 100px;
-   max-height: 25px; 
+   width: 100px;
+   max-height: 100px;
+   
 }
 
 .minor-2, .minor-4 {
-    flex: 44%;
+    flex: 40%;
 }
 
 /* add clickable titles to each showcase item */
 .subject {
     width: 50px;
     height: 20px;
+    position: relative;
+    padding-bottom: -50px;
     background-color: var(--secondary-color);
 }
 
-.subject a {
+.subject h3 {
     color: var(--tertiary-color);
-    font-size: 20px;
+}
+
+.subject p {
+    color: var(--tertiary-color);
+    font-size: 10px;
 }
 
 /* Media queries for smaller desktop screens and smaller */

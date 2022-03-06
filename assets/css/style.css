@@ -1,7 +1,7 @@
 :root {
     --primary-color: #fff;
     --secondary-color: rgba(189, 184, 184);
-    --tertiary-color: rgba(2, 12, 29);
+    --tertiary-color: #042138;
     --main-background: rgb(235, 235, 235);
 }
 
@@ -76,6 +76,7 @@ header nav ul li a {
     height: 100%;
     width: 300px;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-evenly;
     padding-top: 10px;
     padding-right: 5px;
@@ -98,16 +99,18 @@ footer a {
 
 /* style footer section reference */
 .contact-caption {
-    flex: .85 0 0;
+    flex: .85 2;
     padding-top: 20px;
     margin-right: 10px;
 }
 
+/* style caption section in footer, which incorporates Bio & Showcase as well, to word-wrap */
 .caption-section {
-    width: 200px;
+    width: 20%;
     float: right;
     text-align: right;
-    padding-right: 10px;
+    padding-top: 10px;
+    padding-right: 20px;
     border-right: 3px solid var(--tertiary-color);
 }
 
@@ -115,11 +118,10 @@ footer a {
     color: var(--tertiary-color);
     float: right;
     font-size: 50px;
-    margin: 0;
 }
 
 .contact-details {
-    flex: 2.25 0 0;
+    flex: 2.25;
     padding-top: 10px;
     margin: 5px 40px 0 30px;
     font-size: 15px;
@@ -205,11 +207,11 @@ footer a {
 }
 
 .showcase-caption {
-    flex: 1 0 0;
+    flex: .80 0 0;
     margin-top: 20px;
-    margin-right: 10px; 
+    margin-right: 10px;
 }
-
+ 
 .showcase-caption h2 {
     color: var(--tertiary-color);
     font-size: 50px;
@@ -218,7 +220,7 @@ footer a {
 
 .the-works {
     width: 70%;
-    margin: 25px;
+    margin-left: -30px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -226,14 +228,17 @@ footer a {
 }
 
 .showcase-main{
-    width: 90%;
-    margin: 10px;
+    width: 95%;
+    margin-top: 10px;
+    margin-left: 25px;
     position: relative;
+    border: 10px solid var(--secondary-color);
 }
 
 .secondary-projects {
     width: 95%;
-    margin: 10px;
+    margin-right: 10px;
+    margin-left: 0;
     display: flex;
     flex-wrap: wrap;
     align-items: flex-start;
@@ -251,7 +256,7 @@ footer a {
 }
 
 .minor-3 {
-    background-image: url("../images/bailey.jpg");  
+    background-image: url("../images/mountain.png");  
     width: 60%;
 }
 
@@ -272,6 +277,7 @@ footer a {
     background-size: cover;
     background-position: center;
     position: relative;
+    border: 10px solid var(--secondary-color);
 }
 
 /* fit images into respective divs */
@@ -297,23 +303,22 @@ footer a {
     flex-wrap: wrap;
     position: absolute;
     left: 10px;
-    bottom: 30px;
+    bottom: 10px;
     background: var(--tertiary-color);
     opacity: 80%;
-    }
+}
 
 /* style content text */
 .subject a {
-    color: var(--secondary-color);
+    color: #fff;
     font: 18px;
     text-decoration: none;
 }
 
 .subject p {
-    color: var(--secondary-color);
+    color: var(--main-background);
     font: 10px;
- }
-
+}
 
 
 /* Media queries for smaller desktop screens and smaller */
@@ -359,16 +364,28 @@ footer a {
     footer {
         display: flex;
         flex-direction: column;
-   }
-   
-   .contact-details {
-       flex-direction: column;
-   }
-  }
+    }
 
-  @media screen and (max-width: 575px) {
+   .bio-caption h2, .showcase-caption h2,.contact-caption h2 {
+       font-size: 35px;
+    }
+
+    .subject {
+        min-width: 50px;
+    }
+
+    .subject a {
+        font-size: 10px;
+    }
+
+    .subject p {
+        font-size: 8px;
+    }
+}
+   
+@media screen and (max-width: 575px) {
     .the-works {
         display: flex;
         flex-direction: column;
     }
-  }
+}

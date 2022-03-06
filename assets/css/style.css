@@ -1,8 +1,8 @@
 :root {
     --primary-color: #fff;
-    --secondary-color: #bad3da;
-    --tertiary-color: #03282b;
-    --main-background: #d3dbca;
+    --secondary-color: rgba(189, 184, 184);
+    --tertiary-color: rgba(2, 12, 29);
+    --main-background: rgb(235, 235, 235);
 }
 
 /* use "*" for universal selector to apply the following to all elements*/
@@ -226,44 +226,41 @@ footer a {
 
 .showcase-main{
     width: 90%;
-    align-items: flex-start;
     margin: 10px;
     position: relative;
 }
 
 .secondary-projects {
-    width: 90%;
+    width: 95%;
     margin: 10px;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    align-items: flex-start;
     
 }
 /* set up images to fill secondary project divs */
 .minor-1 {
     background-image: url("../images/RMA\ website\ homepage.png");
+    width: 60%;
 }
 
 .minor-2 {
-    background-image: url("../images/DepecheMode-768x604.jpg");  
+    background-image: url("../images/DepecheMode-768x604.jpg"); 
+    width: 40%; 
 }
 
 .minor-3 {
-    background-image: url("../images/bailey.jpg");   
+    background-image: url("../images/bailey.jpg");  
+    width: 60%;
 }
 
 .minor-4 {
-    background-image: url("../images/active-states.jpg");   
+    background-image: url("../images/active-states.jpg"); 
+    width: 40%;  
 }
 
-.minor-1 img, .minor-2 img, .minor-3 img, .minor-4 img {
-    width: 100px;
-    height: 100px;
-    object-fit: cover;
-}
 /* position secondary project divs */
-.minor-1, .minor-3 {
-    width: 60%;
+.minor-1, .minor-2, .minor-3, .minor-4 {
     margin: 20px;
     padding: 20px;
     height: 100px;
@@ -274,23 +271,7 @@ footer a {
     background-size: cover;
     background-position: center;
     position: relative;
-    border: 2px solid black;
 }
-
-.minor-2, .minor-4 {
-    width: 40%;
-    margin: 20px 20px 20px 0px;
-    padding: 20px;
-    height: 100px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-end;
-    align-items: flex-end;
-    background-size: cover;
-    background-position: center;
-    position: relative;
-    border: 2px solid black;
-    }
 
 /* fit images into respective divs */
 .showcase-main img {
@@ -316,19 +297,19 @@ footer a {
     position: absolute;
     left: 10px;
     bottom: 30px;
-    background: var(--secondary-color);
-    color: var(--secondary-color);
-}
+    background: var(--tertiary-color);
+    opacity: 80%;
+    }
 
 /* style content text */
 .subject a {
-    color: var(--tertiary-color);
+    color: var(--secondary-color);
     font: 18px;
     text-decoration: none;
 }
 
 .subject p {
-    color: var(--tertiary-color);
+    color: var(--secondary-color);
     font: 10px;
  }
 

@@ -266,20 +266,20 @@ footer a {
 
 /* position secondary project divs */
 .minor-1, .minor-2, .minor-3, .minor-4 {
-    width: auto;
+    margin: 20px;
+    padding: 10px;
     height: 100px;
     display: flex;
-    margin: 20px;
-    padding: 20px;
     flex-wrap: wrap;
     justify-content: flex-end;
     align-items: flex-end;
-    object-fit: cover;
+    background-size: cover;
+    background-position: center;
     position: relative;
     border: 10px solid var(--secondary-color);
 }
 
-/* fit images into respective divs */
+/* fit main into div */
 .showcase-main img {
    width: 100%;
    height: 200px;
@@ -288,16 +288,15 @@ footer a {
 
 /* have image grow large when moused over by user */  
 .showcase-main img:hover {
-     transform: scale(1.5);
-}
- 
- /* I'm mising something here; tried this because using same format as showcase-main did not work; was working so not sure what I changed */
-.minor-1 img:hover, .minor-2 img:hover, .minor-3 img:hover .minor-4 img:hover {
-    transform: scale(1.5);
+     transform: scale(1.25);
+ }
+
+ .minor-1:hover, .minor-2:hover, .minor-3:hover, .minor-4:hover {
+    transform: scale(1.25);
 }
 
 .minor-2, .minor-4 {
-     flex: 1 1 1;
+     flex: 1 0 0;
  }
 
 /* position the projects reference tags */
@@ -324,9 +323,7 @@ footer a {
     font: 8px;
 }
 
-
 /* Media queries for smaller desktop screens and smaller */
-
 @media screen and (max-width: 980px) {
     header {
         padding-bottom: 0;

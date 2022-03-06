@@ -201,9 +201,9 @@ footer a {
 }
 
 .showcase-caption {
-   width: 25%;
-   margin-top: 20px;
-   margin-right: 10px; 
+    flex: 1 0 0;
+    margin-top: 20px;
+    margin-right: 10px; 
 }
 
 .showcase-caption h2 {
@@ -213,19 +213,17 @@ footer a {
 }
 
 .the-works {
-    margin-top: 20px;
+    width: 70%;
+    margin: 20px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
     align-content: flex-start;
 }
 
-.showcase-main {
-    flex: 4;
-    justify-content: center;
-    flex-wrap: wrap;
+.showcase-main{
+    flex: 100%;
     margin: 10px;
-    border: 2px solid black;
 }
 
 .minor-1, .minor-2, .minor-3, .minor-4 {
@@ -242,110 +240,34 @@ footer a {
     transform: scale(1.5);
 }
 
-
 .subject {
     background: var(--secondary-color);
+    color: var(--secondary-color);
+}
+
+.subject a{
     color: var(--tertiary-color);
-}
-/* style section featuring my work */
-/*.showcase {
-    display: flex;
-    
+    font: 15px;
+    text-decoration: none;
 }
 
-.showcase-caption {
-   flex: 1
-    text-align: right;
-}
-
-.showcase-caption h2 {
+.subject p {
     color: var(--tertiary-color);
-    font-size: 50px;
-    float: right;
-}
+    font: 10px;
+ }
 
-.the-works {
-    flex: 2.5;
-    max-height: 525px;
-    margin-top: 10px;
-    padding-top: 10px;
-    padding-left: 20px;
-}
-
-.the-works:nth-of-type(5) div::first-child {
-    flex: 2;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-around;
-}
-/*
-.showcase-main {
-    flex: 2;
-    width: 60%;    height: 200px;
-    margin-left: 25px;
-    display: flex;
-    border: 5px solid var(--secondary-color);
-}
-
-.showcase-main img {
-    max-width: 100%;
-    height: 200px;
-    align-items: center;
-}
-
-.showcase-2 {
-    height: 45%;
-    width: 95%;
-    margin-top: 20px;
-    margin-right: 25px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-}
-
-/* style the 4 "lesser" projects in the portfolio showcase */
-/*
-.minor-1, .minor-2, .minor-3, .minor-4 {
-    border: 5px solid var(--secondary-color);
-    height: 45%;
-}
-
-.minor-1, .minor-3 {
-    flex: 2;
-    margin-right: 2%;
-}
-
-/* fit images to child-flexboxes */
-/*
 .minor-1 img, .minor-2 img, .minor-3 img, .minor-4 img {
    width: 100px;
-   max-height: 100px;
-   
+ }
+
+.minor-1 img:hover, .minor-2 img:hover, .minor-3 img:hover .minor-4 img:hover {
+    transform: scale(1.5);
 }
 
 .minor-2, .minor-4 {
     flex: 1;
 }
-*/
-/* add clickable titles to each showcase item */
-/*
-.subject {
-    width: 50px;
-    height: 20px;
-    position: relative;
-    padding-bottom: -50px;
-    background-color: var(--secondary-color);
-}
 
-.subject h3 {
-    color: var(--tertiary-color);
-}
-
-.subject p {
-    color: var(--tertiary-color);
-    font-size: 10px;
-}
 
 /* Media queries for smaller desktop screens and smaller */
 @media screen and (max-width: 980px) {
@@ -381,6 +303,11 @@ footer a {
 } 
 
   @media screen and (max-width: 768px) {
+    .bio {
+        display: flex;
+        flex-direction: column;
+    }
+    
     footer {
         display: flex;
         flex-direction: column;
@@ -392,5 +319,8 @@ footer a {
   }
 
   @media screen and (max-width: 575px) {
-
+    .the-works {
+        display: flex;
+        flex-direction: column;
+    }
   }

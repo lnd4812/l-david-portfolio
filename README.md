@@ -13,8 +13,8 @@ CSS
 
 ## Deployment
 
-This site has been published via . 
-The repository has been stored on [).
+This site has been published via [Github Pages](https://lnd4812.github.io/code-refactor-challenge/).
+The repository has been stored on [Github](https://github.com/lnd4812/code-refactor-challenge.git).
 
 ## Design
 
@@ -28,7 +28,7 @@ An MIT [License] has been included with this project.
 
 ## Credits and external Resources
 
-A full description of Challenge 2's criteria is outlined here: Module 1 Challenge Project Page.
+A full description of Challenge 2's criteria is outlined here: [Module 2 Challenge Project Page](https://courses.bootcampspot.com/courses/1181/assignments/23386?module_item_id=459363).
 Additional assistance was provided by the TA's during Office Hours.
 
 ## Task list

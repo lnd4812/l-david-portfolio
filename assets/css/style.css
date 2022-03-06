@@ -29,6 +29,12 @@ header {
     flex-wrap: wrap;
 }
 
+header img {
+    border-radius: 100%;
+    width: 40px;
+    margin-left: 10px;
+}
+
 header h1 a {
     color: var(--tertiary-color);
     font-size: 36px;
@@ -47,7 +53,7 @@ header nav {
 header nav ul {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: sspacepace-between;
     align-items: center;
     list-style: none;
     font-size: 28px;
@@ -67,7 +73,8 @@ header nav ul li a {
 .name-container {
     height: 100%;
     width: 300px;
-    text-align: right;
+    display: flex;
+    justify-content: space-evenly;
     padding-top: 10px;
     padding-right: 5px;
     background-color: var(--secondary-color);
@@ -88,14 +95,13 @@ footer a {
 }
 
 .contact-caption {
-    flex: .75 0;
+    flex: .85 0 0;
     padding-top: 20px;
     margin-right: 10px;
 }
 
-/* style footer section reference which styles bio caption & My work div as well */
+/* style footer section reference */
 .caption-section {
-    width: 45%;
     height: 100%;
     float: right;
     text-align: right;
@@ -111,11 +117,12 @@ footer a {
 }
 
 .contact-details {
-    flex: 2.25;
+    flex: 2.25 0 0;
     padding-top: 10px;
     margin: 5px 40px 0 30px;
     font-size: 15px;
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: space-around;
 }
@@ -168,12 +175,6 @@ footer a {
     margin-right: 10px;
 }
 
-.bio-caption img {
-    border-radius: 50%;
-    width: 25%;
-}
-
-
 .bio-caption h2 {
     color: var(--tertiary-color);
     font-size: 50px;
@@ -192,20 +193,68 @@ footer a {
     font-size: 12px;
 }
 
-/* style section featuring my work */
 .showcase {
     width: 100%;
-    height: 550px;
-    display: flex;
+    display: flex; 
     flex-wrap: wrap;
     justify-content: space-around;
 }
 
 .showcase-caption {
-    flex: .8;
-    padding-top: 20px;
-    padding-right: 20px;
-    margin-left: 20px;
+   width: 25%;
+   margin-top: 20px;
+   margin-right: 10px; 
+}
+
+.showcase-caption h2 {
+    color: var(--tertiary-color);
+    font-size: 50px;
+    float: right;
+}
+
+.the-works {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: flex-start;
+}
+
+.showcase-main {
+    flex: 4;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 10px;
+    border: 2px solid black;
+}
+
+.minor-1, .minor-2, .minor-3, .minor-4 {
+    flex: 1;
+    margin: 10px;
+    border: 2px solid black;
+}
+
+.showcase-main img {
+   width: 100%;
+}
+
+.showcase-main img:hover {
+    transform: scale(1.5);
+}
+
+
+.subject {
+    background: var(--secondary-color);
+    color: var(--tertiary-color);
+}
+/* style section featuring my work */
+/*.showcase {
+    display: flex;
+    
+}
+
+.showcase-caption {
+   flex: 1
     text-align: right;
 }
 
@@ -217,16 +266,24 @@ footer a {
 
 .the-works {
     flex: 2.5;
+    max-height: 525px;
     margin-top: 10px;
     padding-top: 10px;
     padding-left: 20px;
 }
 
+.the-works:nth-of-type(5) div::first-child {
+    flex: 2;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+/*
 .showcase-main {
-    width: 90%;
-    height: 200px;
+    flex: 2;
+    width: 60%;    height: 200px;
     margin-left: 25px;
-    flex: 1 0 0;
     display: flex;
     border: 5px solid var(--secondary-color);
 }
@@ -248,17 +305,19 @@ footer a {
 }
 
 /* style the 4 "lesser" projects in the portfolio showcase */
+/*
 .minor-1, .minor-2, .minor-3, .minor-4 {
     border: 5px solid var(--secondary-color);
     height: 45%;
 }
 
 .minor-1, .minor-3 {
-    flex: 54%;
+    flex: 2;
     margin-right: 2%;
 }
 
 /* fit images to child-flexboxes */
+/*
 .minor-1 img, .minor-2 img, .minor-3 img, .minor-4 img {
    width: 100px;
    max-height: 100px;
@@ -266,10 +325,11 @@ footer a {
 }
 
 .minor-2, .minor-4 {
-    flex: 40%;
+    flex: 1;
 }
-
+*/
 /* add clickable titles to each showcase item */
+/*
 .subject {
     width: 50px;
     height: 20px;
@@ -321,9 +381,14 @@ footer a {
 } 
 
   @media screen and (max-width: 768px) {
-    section {
-        padding: 30px 15px;
-    }
+    footer {
+        display: flex;
+        flex-direction: column;
+   }
+   
+   .contact-details {
+       flex-direction: column;
+   }
   }
 
   @media screen and (max-width: 575px) {

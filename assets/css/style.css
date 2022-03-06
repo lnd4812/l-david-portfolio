@@ -1,6 +1,6 @@
 :root {
     --primary-color: #fff;
-    --secondary-color: #91c5d4;
+    --secondary-color: #bad3da;
     --tertiary-color: #03282b;
     --main-background: #d3dbca;
 }
@@ -96,13 +96,13 @@ footer a {
     text-decoration: none;
 }
 
+/* style footer section reference */
 .contact-caption {
     flex: .85 0 0;
     padding-top: 20px;
     margin-right: 10px;
 }
 
-/* style footer section reference */
 .caption-section {
     height: 100%;
     float: right;
@@ -173,7 +173,7 @@ footer a {
 }
 
 .bio-caption {
-    flex: .75 0 0;
+    flex: .80 0 0;
     margin-top: 20px;
     margin-right: 10px;
 }
@@ -187,8 +187,8 @@ footer a {
 .bio-details {
     flex: 2 0 0;
     width: 90%;
-    margin: 10px 40px 0 30px;
-    padding: 10px;
+    margin: 20px 40px 0 30px;
+    padding: 25px;
 }
 
 .bio p {
@@ -228,45 +228,99 @@ footer a {
     width: 90%;
     align-items: flex-start;
     margin: 10px;
+    position: relative;
 }
 
 .secondary-projects {
-    width: 70%;
-    margin: 20px;
+    width: 90%;
+    margin: 10px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+    
+}
+/* set up images to fill secondary project divs */
+.minor-1 {
+    background-image: url("../images/RMA\ website\ homepage.png");
 }
 
+.minor-2 {
+    background-image: url("../images/DepecheMode-768x604.jpg");  
+}
+
+.minor-3 {
+    background-image: url("../images/bailey.jpg");   
+}
+
+.minor-4 {
+    background-image: url("../images/active-states.jpg");   
+}
+
+.minor-1 img, .minor-2 img, .minor-3 img, .minor-4 img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+}
+/* position secondary project divs */
 .minor-1, .minor-3 {
     width: 60%;
-    margin: 3.5%;
+    margin: 20px;
+    padding: 20px;
+    height: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-items: flex-end;
+    background-size: cover;
+    background-position: center;
+    position: relative;
     border: 2px solid black;
 }
 
 .minor-2, .minor-4 {
     width: 40%;
-    margin: 3.5%;
+    margin: 20px 20px 20px 0px;
+    padding: 20px;
+    height: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-items: flex-end;
+    background-size: cover;
+    background-position: center;
+    position: relative;
     border: 2px solid black;
-}
+    }
+
+/* fit images into respective divs */
 .showcase-main img {
    width: 100%;
    height: 200px;
    object-fit: cover;
-   }
-
-.showcase-main img:hover {
-    transform: scale(1.5);
 }
 
+/* have image grow large when moused over by user */  
+.showcase-main img:hover, .minor-1 img:hover, .minor-2 img:hover, .minor-3 img:hover .minor-4 img:hover {
+     transform: scale(1.5);
+ }
+ 
+.minor-2, .minor-4 {
+     flex: 1;
+ }
+
+/* position the projects reference tags */
 .subject {
     width: 150px;
     display: flex;
     flex-wrap: wrap;
+    position: absolute;
+    left: 10px;
+    bottom: 30px;
     background: var(--secondary-color);
     color: var(--secondary-color);
 }
 
+/* style content text */
 .subject a {
     color: var(--tertiary-color);
     font: 18px;
@@ -278,18 +332,6 @@ footer a {
     font: 10px;
  }
 
-.minor-1 img, .minor-2 img, .minor-3 img, .minor-4 img {
-   width: 100px;
-   object-fit: contain;
- }
-
-.minor-1 img:hover, .minor-2 img:hover, .minor-3 img:hover .minor-4 img:hover {
-    transform: scale(1.5);
-}
-
-.minor-2, .minor-4 {
-    flex: 1;
-}
 
 
 /* Media queries for smaller desktop screens and smaller */

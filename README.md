@@ -32,7 +32,9 @@ An MIT [License] has been included with this project.
 
 A full description of Challenge 2's criteria is outlined here: [Module 2 Challenge Project Page](https://courses.bootcampspot.com/courses/1181/assignments/23386?module_item_id=459363).
 Additional assistance was provided by the TA's during Office Hours.
+
 [Google Fonts](https://fonts.google.com/specimen/Raleway#standard-styles).
+
 [Gimp](https://www.gimp.org/).
 
 ## Task list

@@ -256,13 +256,13 @@ footer a {
 }
 
 .minor-3 {
-    background-image: url("../images/mountain.png");  
-    width: 60%;
+    background-image: url("../images/runbuddy-site-page.png"); 
+    width: 60%;  
 }
 
 .minor-4 {
-    background-image: url("../images/active-states.jpg"); 
-    width: 40%;  
+    background-image: url("../images/image-equilibrium.jpg");  
+    width: 40%;
 }
 
 /* position secondary project divs */
@@ -298,7 +298,7 @@ footer a {
 
 /* position the projects reference tags */
 .subject {
-    width: 150px;
+    width: 200px;
     display: flex;
     flex-wrap: wrap;
     position: absolute;
@@ -311,13 +311,13 @@ footer a {
 /* style content text */
 .subject a {
     color: #fff;
-    font: 18px;
+    font: 12px;
     text-decoration: none;
 }
 
 .subject p {
     color: var(--main-background);
-    font: 10px;
+    font: 8px;
 }
 
 
@@ -375,11 +375,11 @@ footer a {
     }
 
     .subject a {
-        font-size: 10px;
+        font-size: 8px;
     }
 
     .subject p {
-        font-size: 8px;
+        font-size: 5px;
     }
 }
    

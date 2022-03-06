@@ -266,15 +266,15 @@ footer a {
 
 /* position secondary project divs */
 .minor-1, .minor-2, .minor-3, .minor-4 {
-    margin: 20px;
-    padding: 20px;
+    width: auto;
     height: 100px;
     display: flex;
+    margin: 20px;
+    padding: 20px;
     flex-wrap: wrap;
     justify-content: flex-end;
     align-items: flex-end;
-    background-size: cover;
-    background-position: center;
+    object-fit: cover;
     position: relative;
     border: 10px solid var(--secondary-color);
 }
@@ -287,12 +287,17 @@ footer a {
 }
 
 /* have image grow large when moused over by user */  
-.showcase-main img:hover, .minor-1 img:hover, .minor-2 img:hover, .minor-3 img:hover .minor-4 img:hover {
+.showcase-main img:hover {
      transform: scale(1.5);
- }
+}
  
+ /* I'm mising something here; tried this because using same format as showcase-main did not work; was working so not sure what I changed */
+.minor-1 img:hover, .minor-2 img:hover, .minor-3 img:hover .minor-4 img:hover {
+    transform: scale(1.5);
+}
+
 .minor-2, .minor-4 {
-     flex: 1;
+     flex: 1 1 1;
  }
 
 /* position the projects reference tags */

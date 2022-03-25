@@ -2,6 +2,8 @@
 
 The purpose of this project is establish a portfolio using the CSS formatting guidlines introduced in Module 2 to produce a responsive webpage that can be viewed on multiple platforms, devices and/or screen sizes without losing the integrity of site display.  This project will also form the basis of the portfolio which I, as a student in this Bootcamp course, will build upon through the various challenges and beyond as one of the necessary resources required to demonstrate my abilities to prospective employers and clients.
 
+[An image of the challenge sample posted as part of acceptance criteria]()
+
 ## Requirements
 
 No special requirements.
@@ -22,6 +24,8 @@ The main design of this page is fairly basic - a header, hero, main section and 
 
 Images were fitted into their respective div containers via background url designations, as I was having difficulty getting them to fit properly when following feedback obtained during Mar05/22 office hours (the TA was having difficulty hearing me and was not able to fully address my) and various sites on the internet.  This formatting, appears to enable the images and tags on which are indicated the project name and link for each to respond in the manner specified in the Acceptance Criteria.
 
+ADD IMAGE HERE
+
 I recognize I have not met a few Acceptance Criteria, the main one being the responsive display, and had to change my draft resume to an image file in order to complete the link. I believe the other criteria requirements appear to be in order.  I do, however, recognize that the responsive display is the most crucial of the Acceptance Criteria for this project and I also recognize that further study, research and practice are obviously required in order for me to improve the design and formatting to a more acceptable standard.
 
 ## License
@@ -40,6 +44,7 @@ Additional assistance was provided by the TA's during Office Hours.
 ## Task list
 
 [ ] Continue to update portfolio as I complete more challenges and other projects.
+[ ] Improve flexbox functionality, responsiveness and formatting as I gain more experience with coding. 
 
 ## Contribution
 

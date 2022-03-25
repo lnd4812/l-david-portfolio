@@ -2,7 +2,7 @@
 
 The purpose of this project is establish a portfolio using the CSS formatting guidlines introduced in Module 2 to produce a responsive webpage that can be viewed on multiple platforms, devices and/or screen sizes without losing the integrity of site display.  This project will also form the basis of the portfolio which I, as a student in this Bootcamp course, will build upon through the various challenges and beyond as one of the necessary resources required to demonstrate my abilities to prospective employers and clients.
 
-[An illustration of the sample provided may be accessed via this link](./assets/02-advanced-css-homework-demo.gif)
+[Please click this link to see an example of the completed project](./assets/02-advanced-css-homework-demo.gif)
 
 ## Requirements
 
@@ -44,6 +44,7 @@ Additional assistance was provided by the TA's during Office Hours.
 ## Task list
 
 [ ] Continue to update portfolio as I complete more challenges and other projects.
+
 [ ] Continue to update functionality, responsiveness and formatting as I gain more experience with coding.
 
 ## Contribution

@@ -241,17 +241,17 @@ footer a {
     display: flex;
     flex-wrap: wrap;
     align-items: flex-start;
-    
-}
+  }
+
 /* set up images to fill secondary project divs */
 .minor-1 {
-    background-image: url("../images/RMA\ website\ homepage.png");
+    background-image: url("../images/password-generator.png");
     width: 60%;
 }
 
 .minor-2 {
-    background-image: url("../images/DepecheMode-768x604.jpg"); 
-    width: 40%; 
+    background-image: url("../images/RMA\ website\ homepage.png");
+    width: 40%;
 }
 
 .minor-3 {
@@ -260,8 +260,8 @@ footer a {
 }
 
 .minor-4 {
-    background-image: url("../images/image-equilibrium.jpg");  
-    width: 40%;
+    background-image: url("../images/DepecheMode-768x604.jpg"); 
+    width: 40%; 
 }
 
 /* position secondary project divs */
@@ -288,7 +288,7 @@ footer a {
 
 /* have image grow large when moused over by user */  
 .showcase-main img:hover {
-     transform: scale(1.25);
+   transform: scale(1.25);
  }
 
  .minor-1:hover, .minor-2:hover, .minor-3:hover, .minor-4:hover {
@@ -301,7 +301,7 @@ footer a {
 
 /* position the projects reference tags */
 .subject {
-    width: 200px;
+    width: 175px;
     display: flex;
     flex-wrap: wrap;
     position: absolute;
@@ -314,13 +314,13 @@ footer a {
 /* style content text */
 .subject a {
     color: #fff;
-    font: 12px;
+    font-size: 12px;
     text-decoration: none;
 }
 
 .subject p {
     color: var(--main-background);
-    font: 8px;
+    font-size: 8px;
 }
 
 /* Media queries for smaller desktop screens and smaller */
